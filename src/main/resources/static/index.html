@@ -18,7 +18,9 @@
 <h1>Hello !!</h1>
 <div class="container"></div>
 <div class="container unauthenticated">
-    Sign in With GitHub: <a href="/oauth2/authorization/github">click here</a>
+    Sign in With GitHub: <a href="/oauth2/authorization/github">login with github</a>
+    <a href="/oauth2/authorization/facebook">Login with Facebook</a>
+
 </div>
 
 <div class="container authenticated">
@@ -26,6 +28,8 @@
     <div>
         <button onClick="logout()" class="btn btn-primary">Logout</button>
     </div>
+    <a href="/user">User Info</a>
+    <a href="/logout">logout</a>
 </div>
 <script type="text/javascript">
     $.get("/user", function(data) {
